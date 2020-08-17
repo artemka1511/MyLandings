@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Discover Amazing places in Japan</title>
+    <link rel="stylesheet" href="http://localhost:8000/static/css/style.css">
+    <link rel="stylesheet" href="ttp://localhost:8000/static/css/left-nav-style.css">
+</head>
+<body>
+    <!--
+    Скрытый checkbox, отвечающий за переключение панели, должен быть в верхней части документа, лучше сразу после тега `<body>`
+
+    `id` атрибут предназначен для связки с атрибутом `for` тега <label>
+
+    Атрибут `hidden` указывает состояние «скрытый» у текущего элемента
+    -->
+    <input type="checkbox" id="nav-toggle" hidden>
+    <!--
+    Выдвижную панель размещаете ниже
+    флажка (checkbox), но не обязательно
+    непосредственно после него, например
+    можно и в конце страницы
+    -->
+    <nav class="nav">
+        <!--
+    Метка с именем `id` чекбокса в `for` атрибуте
+    Символ Unicode 'TRIGRAM FOR HEAVEN' (U+2630)
+    Пустой атрибут `onclick` используем для исправления бага в iOS < 6.0
+    -->
+        <label for="nav-toggle" class="nav-toggle" onclick></label>
+        <!--
+    Здесь размещаете любую разметку,
+    если это меню, то скорее всего неупорядоченный список <ul>
+    -->
+        <h2 class="logo">
+            <a href="">Лендинги :</a>
+        </h2>
+        <ul>
+            <li><a href="http://mytest-artem.ru/">Путешествие по Японии</a></li>
+            <li><a href="#2">Ресторан "Летний Дворец"</a></li>
+            <li><a href="#3">В разработке</a></li>
+            <li><a href="#4">В разработке</a></li>
+            <li><a href="#5">В разработке</a></li>
+            <li><a href="#6">В разработке</a></li>
+            <li><a href="#7">В разработке</a></li>
+        </ul>
+    </nav>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header__wrapper">
+                <div class="header__logo">
+                    <a href="/" class="header__logo-link">
+                        <img src="http://localhost:8000/static/image/svg/odigo-logo.svg" alt="Discover Amazing places in Japan" class="header__logo-pic">
+                    </a>
+                </div>
+    
+                <nav class="header__nav">
+                    <u1 class="header__list">
+                        <li class="header_item" >
+                            <a href="#!" class="header__link">Articles</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#!" class="header__link">Locations</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#!" class="header__link">Videos</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#!" class="header__link">Sign in</a>
+                        </li>
+                    </u1>
+                    <div class="header__nav-close">
+                        <span class="header__nav-close-line"></span>
+                        <span class="header__nav-close-line"></span>
+                    </div>
+                </nav>
+                <div class="header__burger burger">
+                    <span class="burger__line burger__line_first"></span>
+                    <span class="burger__line burger__line_second"></span>
+                    <span class="burger__line burger__line_third"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="intro">
+            <div class="wrapper">
+                <h1 class="intro__title">
+                    Discover Amazing places in Japan
+                </h1>
+                <p class="intro_subtitle">
+                    Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the energy but under the bed, for attack the child, open the door, 
+                </p>
+                <form class="search-form">
+                    <fieldset class="search-form__wrap">
+                        <p class="search-form__info">
+                            <input type="text" name="user-like-to-do" class="search-form__field" placeholder="What would you like to do?">
+                            <input type="text" name="user-like-to-go" class="search-form__field" placeholder="Where would you like to go?">
+                            <button type="submit" class="search-form__submit">search</button>
+                        </p>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+
+        <section class="benefits">
+            <div class="benefits__wrap">
+                <h2 class="benefits__title">
+                    Benefits of Odigo
+                </h2>
+                <div class="benefits__cards">
+                    <div class="benefits__card">
+                        <div class="benefits__card-pic">
+                            <img src="http://localhost:8000/static/image/svg/church-ico.svg" alt="Welcome to Odigo!" class="benefits__card-thumb">
+                        </div>
+                        <h3 class="benefits__card-title">
+                            Welcome to Odigo!
+                        </h3>
+                        <p class="benefits__card-desc">
+                            Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
+                        </p>
+                        <a href="" class="benefits__card-more">
+                            LEARN MORE
+                        </a>
+                    </div>
+                    <div class="benefits__card">
+                        <div class="benefits__card-pic">
+                            <img src="http://localhost:8000/static/image/svg/person-ico.svg" alt="Your Personal Japan Guide" class="benefits__card-thumb">
+                        </div>
+                        <h3 class="benefits__card-title">
+                            Your Personal Japan Guide
+                        </h3>
+                        <p class="benefits__card-desc">
+                            Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
+                        </p>
+                        <a href="" class="benefits__card-more">
+                            LEARN MORE
+                        </a>
+                    </div>
+                    <div class="benefits__card">
+                        <div class="benefits__card-pic">
+                            <img src="http://localhost:8000/static/image/svg/building-ico.svg" alt="Promoting Local Businesses" class="benefits__card-thumb">
+                        </div>
+                        <h3 class="benefits__card-title">
+                            Promoting Local Businesses
+                        </h3>
+                        <p class="benefits__card-desc">
+                            Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
+                        </p>
+                        <a href="" class="benefits__card-more">
+                            LEARN MORE
+                        </a>
+                    </div>
+                    <div class="benefits__card">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="places">
+            <div class="wrapper-full">
+                <div class='places__caption'>
+                    <h2 class="places__title section__title">
+                        Get inspired for your next trip
+                    </h2>
+                    <a href="#!" class="places__view-all">VIEW ALL</a>
+                </div>
+
+                <div class="places__cards">
+
+                    <figure class="places__card places__card-size_lg">
+                        <img src="http://localhost:8000/static/image/place-1.jpg" alt="Mount Fuji" class="places__card-pic places__card-pic_size_lg">
+                        <figcaption class="places__card-title">
+                            Mount Fuji
+                        </figcaption>
+                        <a href="#!" class="places__card-link"></a>
+                    </figure>
+
+                    <figure class="places__card places__card-size_lg">
+                        <img src="http://localhost:8000/static/image/place-2.jpg" alt="Kyoto" class="places__card-pic places__card-pic_size_lg">
+                        <figcaption class="places__card-title">
+                            Kyoto
+                        </figcaption>
+                        <a href="#!" class="places__card-link"></a>
+                    </figure>
+
+                    <figure class="places__card places__card-size_sm">
+                        <img src="http://localhost:8000/static/image/place-3.jpg" alt="Tokyo" class="places__card-pic places__card-pic_size_sm">
+                        <figcaption class="places__card-title">
+                            Tokyo
+                        </figcaption>
+                        <a href="#!" class="places__card-link"></a>
+                    </figure>
+
+                    <figure class="places__card places__card-size_sm">
+                        <img src="http://localhost:8000/static/image/place-4.jpg" alt="Niagata" class="places__card-pic places__card-pic_size_sm">
+                        <figcaption class="places__card-title">
+                            Niagata
+                        </figcaption>
+                        <a href="#!" class="places__card-link"></a>
+                    </figure>
+
+                    <figure class="places__card places__card-size_sm">
+                        <img src="http://localhost:8000/static/image/place-5.jpg" alt="Sapporo" class="places__card-pic places__card-pic_size_sm">
+                        <figcaption class="places__card-title">
+                            Sapporo
+                        </figcaption>
+                        <a href="#!" class="places__card-link"></a>
+                    </figure> 
+                </div>
+            </div>
+        </section>
+
+        <div class="tours">
+            <div class="wrapper-full">
+                <div class="tours__tour tour">
+                    <div class="tour-pic">
+                        <img src="http://localhost:8000/static/image/tour-1.jpg" alt="Prefecture in Focus: Tottori" class="tour__thumb">
+                    </div>
+                    <div class="tour__info">
+                        <h3 class="tour__title">
+                            Prefecture in Focus: Tottori
+                        </h3>
+                        <p class="tour__desc">
+                            Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the energy but under the bed, for attack the child, open the door, 
+                        </p>
+                        <a href="#!" class="tour__more">VIEW PREFECTURE</a>
+                    </div>
+                </div>
+
+                <div class="tours__tour tour">
+                    <div class="tour__info">
+                        <h3 class="tour__title">
+                            Featured Neighborhood: Kyoto’s Arashiyama
+                        </h3>
+                        <p class="tour__desc">
+                            Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the energy but under the bed, for attack the child, open the door,  
+                        </p>
+                        <a href="#!" class="tour__more">VIEW NEIGHBORHOOD</a>
+                    </div>
+                    <div class="tour-pic">
+                        <img src="http://localhost:8000/static/image/tour-2.jpg" alt="Featured Neighborhood: Kyoto’s Arashiyama" class="tour__thump">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="top">
+            <div class="wrapper-full">
+                <h2 class="top__title section__title">
+                    Today top places to visit
+                </h2>
+                <div class="top__cards">    
+                    <div class="top__card">
+                        <div class="top__card-pic">
+                            <img src="http://localhost:8000/static/image/topcard-1.jpg" alt="NAGOYA" class="top__card-thumb">
+                            <div class="top__card-stats">
+                                <h3 class="top__card-title">
+                                    NAGOYA
+                                </h3>
+                                <div class="top__card-like">
+                                    <span class="top__card-likes-value">
+                                        221
+                                    </span>
+                                </div>
+                                <div class="top__card-comments">
+                                    <span class="top__card-comments-value">
+                                        55
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="top__card-desc">
+                            Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
+                        </p>
+                        <a href="#!" class="top__card-more">
+                            SEE MORE
+                        </a>
+                    </div>
+
+                    <div class="top__card">
+                        <div class="top__card-pic">
+                            <img src="http://localhost:8000/static/image/topcard-2.jpg" alt="NIIGATA" class="top__card-thumb">
+                            <div class="top__card-stats">
+                                <h3 class="top__card-title">
+                                    NIIGATA
+                                </h3>
+                                <div class="top__card-like">
+                                    <span class="top__card-likes-value">
+                                        221
+                                    </span>
+                                </div>
+                                <div class="top__card-comments">
+                                    <span class="top__card-comments-value">
+                                        55
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="top__card-desc">
+                            Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
+                        </p>
+                        <a href="#!" class="top__card-more">
+                            SEE MORE
+                        </a>
+                    </div>
+
+                    <div class="top__card">
+                        <div class="top__card-pic">
+                            <img src="http://localhost:8000/static/image/topcard-3.jpg" alt="OSAKA" class="top__card-thumb">
+                            <div class="top__card-stats">
+                                <h3 class="top__card-title">
+                                    OSAKA
+                                </h3>
+                                <div class="top__card-like">
+                                    <span class="top__card-likes-value">
+                                        221
+                                    </span>
+                                </div>
+                                <div class="top__card-comments">
+                                    <span class="top__card-comments-value">
+                                        55
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="top__card-desc">
+                            Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
+                        </p>
+                        <a href="#!" class="top__card-more">
+                            SEE MORE
+                        </a>
+                    </div>
+
+                    <div class="top__card">
+                        <div class="top__card-pic">
+                            <img src="http://localhost:8000/static/image/topcard-4.jpg" alt="SAITAMA" class="top__card-thumb">
+                            <div class="top__card-stats">
+                                <h3 class="top__card-title">
+                                    SAITAMA
+                                </h3>
+                                <div class="top__card-like">
+                                    <span class="top__card-likes-value">
+                                        221
+                                    </span>
+                                </div>
+                                <div class="top__card-comments">
+                                    <span class="top__card-comments-value">
+                                        55
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="top__card-desc">
+                            Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
+                        </p>
+                        <a href="#!" class="top__card-more">
+                            SEE MORE
+                        </a>
+                    </div>
+
+                    <div class="top__card">
+                        <div class="top__card-pic">
+                            <img src="http://localhost:8000/static/image/topcard-5.jpg" alt="UENO" class="top__card-thumb">
+                            <div class="top__card-stats">
+                                <h3 class="top__card-title">
+                                    UENO
+                                </h3>
+                                <div class="top__card-like">
+                                    <span class="top__card-likes-value">
+                                        221
+                                    </span>
+                                </div>
+                                <div class="top__card-comments">
+                                    <span class="top__card-comments-value">
+                                        55
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="top__card-desc">
+                            Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
+                        </p>
+                        <a href="#!" class="top__card-more">
+                            SEE MORE
+                        </a>
+                    </div>
+
+                    <div class="top__card">
+                        <div class="top__card-pic">
+                            <img src="http://localhost:8000/static/image/topcard-6.jpg" alt="SHIBUYA" class="top__card-thumb">
+                            <div class="top__card-stats">
+                                <h3 class="top__card-title">
+                                    SHIBUYA
+                                </h3>
+                                <div class="top__card-like">
+                                    <span class="top__card-likes-value">
+                                        221
+                                    </span>
+                                </div>
+                                <div class="top__card-comments">
+                                    <span class="top__card-comments-value">
+                                        55
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="top__card-desc">
+                            Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this.
+                        </p>
+                        <a href="#!" class="top__card-more">
+                            SEE MORE
+                        </a>
+                    </div>
+                </div>
+        </section>
+
+        <div class="videos">
+            <div class="videos__wrapper">
+                <div class="video__item">
+                    <iframe class="video__element" src="https://www.youtube.com/embed/R3Ym_DVerPw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+            <div class="wrapper">
+                <div class="footer__item">
+                    <div class="footer__logo">
+                        <img src="http://localhost:8000/static/image/svg/footer-Logo.svg" alt="Discover Amazing places in Japan" class="footer__logo-pic">
+                    </div>
+                    <nav class="footer__nav">
+                        <ul class="footer__menu">
+                            <li class="footer__menu-item">
+                                <h3 class="footer__menu-title">
+                                    Company
+                                </h3>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#!" class="footer__menu-link">
+                                    About
+                                </a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#!" class="footer__menu-link">
+                                    Team
+                                </a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#!" class="footer__menu-link">
+                                    Careers
+                                </a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#!" class="footer__menu-link">
+                                    Privacy Policy
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul class="footer__menu">
+                            <li class="footer__menu-item">
+                                <h3 class="footer__menu-title">
+                                    Locations
+                                </h3>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#!" class="footer__menu-link">
+                                    Tokyo
+                                </a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#!" class="footer__menu-link">
+                                    Kyoto
+                                </a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#!" class="footer__menu-link">
+                                    Osaka
+                                </a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#!" class="footer__menu-link">
+                                    Hokkaido
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul class="footer__menu">
+                            <li class="footer__menu-item">
+                                <h3 class="footer__menu-title">
+                                    Social media
+                                </h3>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#!" class="footer__menu-link">
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#!" class="footer__menu-link">
+                                    Twitter
+                                </a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#!" class="footer__menu-link">
+                                    Instagram
+                                </a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#!" class="footer__menu-link">
+                                    Youtube
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="http://localhost:8000/static/js/main.js">
+    </script>
+</body>
+</html>
